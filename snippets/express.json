@@ -1,0 +1,24 @@
+{
+  "Controller": {
+    "prefix": "controller",
+    "body": [
+      "const model = require(\\\"../models\\\").$TM_FILENAME_BASE;",
+      "",
+      "exports.$1 = (request, response, next) => {",
+      "  $0",
+      "}"
+    ],
+    "description": "Generate a controller"
+  },
+  "Model": {
+    "prefix": "model",
+    "body": [
+      "const db = require(\\\"../../db/connection\\\");",
+      "",
+      "exports.$1 = () => {",
+      "",
+      "}"
+    ],
+    "description": "Generate a model"
+  }
+}
