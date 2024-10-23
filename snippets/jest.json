@@ -1,0 +1,26 @@
+{
+  "Group": {
+    "prefix": "group",
+    "body": [
+      "describe(\"$1\", () => {",
+      "    it('should $2', () => {",
+      "        ",
+      "    });",
+      "});",
+      ""
+    ],
+    "description": "Generate a test group"
+  },
+  "Route Group": {
+    "prefix": "routes",
+    "body": [
+      "describe(\"$1 /$2\", () => {",
+      "    it('$3: should $4', () => {",
+      "      return request(app)$0;",
+      "    });",
+      "});",
+      ""
+    ],
+    "description": "Generate a test group for testing routes with supertest"
+  }
+}
